@@ -118,7 +118,7 @@ Now we are going to the Unit's shop, where you can buy 1 Healer to your squad. '
         print("You earn 10'000 of gold in this Arena")
         print()
         print("Power up your units:")
-        for unit in self.alive_player_team:
+        for unit in self.alive_player_team.team:
             unit.level += 1
             unit.health_default += 200
             unit.power_default += 200
