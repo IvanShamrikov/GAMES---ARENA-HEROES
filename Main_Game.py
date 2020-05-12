@@ -92,7 +92,7 @@ Now we are going to the Unit's shop, where you can buy 1 Healer to your squad. '
                     time.sleep(2)
                     self.reward_calculator()
                     self.counter_arena +=1
-                    print()
+                    print()#FIXME: use multilines prints
                     print()
                     print("Are you ready to prepare for the next Arena? Let's go shopping to buy new units and items!")
                     print()

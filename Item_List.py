@@ -1,4 +1,10 @@
+class Item():
+    def __init__(self, item_class, item_type, item_material, item_value, item_price, item_for_unit):
+        self.item_class = item_class
+        #FIXME: etc....
+
 class Item_List():
+    leather_hemlet_obj = Item(**{"item_class": "ARMOR","item_type": "Helmet","item_material": "Leather helmet","item_value": 100,"item_price": 200,"item_for_unit": "All"})
     leather_helmet = {"item_class": "ARMOR","item_type": "Helmet","item_material": "Leather helmet","item_value": 100,"item_price": 200,"item_for_unit": "All"}
     wooden_helmet = {"item_class": "ARMOR","item_type": "Helmet","item_material": "Wooden helmet","item_value": 200,"item_price": 400,"item_for_unit": "All"}
     iron_helmet = {"item_class": "ARMOR","item_type": "Helmet","item_material": "Iron helmet","item_value": 300,"item_price": 600,"item_for_unit": "All"}

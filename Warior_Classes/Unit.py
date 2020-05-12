@@ -4,7 +4,8 @@ from random import random
 class Unit(abc.ABC):
     buy_cost = 0
     name = ""
-
+    #NOTE: WHY not use __ private notation for _general_health_default_with_equip and others?
+    
     health_default = 0
     _general_health_default_with_equip = 0
     health_in_fight = health_default
@@ -24,7 +25,7 @@ class Unit(abc.ABC):
     chance_critical_hit = 0    #Шанс критической атаки (+30% от Power). Разный у каждого типа персонажей.
     stuned = 0
     super = ""
-
+    #FIXME: Add item class to your code helmet_name should not be a property of Unit this stands for all equipment not only hemlet
     helmet_name = "Helmet"
     helmet_value = 0
 
@@ -74,7 +75,7 @@ class Unit(abc.ABC):
     def get_power_for_fight(self):
         rand = random()
 
-        if self.stuned > 0:
+        if self.stuned > 0:#FIXME: stuned must be boolean type or rename it stuned_for_seconds
             power_for_fight = 0
             print(f"{self.name} is stuned for this fight.")
             self.stuned -= 1
@@ -92,7 +93,7 @@ class Unit(abc.ABC):
 
 
 
-
+    #FIXME: consider using @property decorators https://docs.python.org/3/library/functions.html?highlight=property#property
     power_with_equip = property(get_power_with_equip, set_power_with_equip)
     power_for_fight = property (get_power_for_fight, set_power_for_fight)
 
@@ -105,7 +106,7 @@ class Unit(abc.ABC):
 
 
 
-
+  
     def __init__(self,**kwargs):
         for k, v in kwargs.items():
             setattr(self, k, v)
