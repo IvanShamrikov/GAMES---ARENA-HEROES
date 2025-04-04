@@ -376,5 +376,5 @@ Input the number here ---> ''')
 
 
 g = 0
-t = Team.Team([],"aaa")
+t = Team.Team([], "aaa")
 a=Shop(g,t)

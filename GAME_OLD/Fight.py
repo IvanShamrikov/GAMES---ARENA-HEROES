@@ -1,7 +1,8 @@
 from random import randint
 import time
-from Warior_Classes import Unit_Barbarian
-from Warior_Classes import Unit_Archer
+
+from Warior_Classes import  Unit_Barbarian
+from Warior_Classes import  Unit_Archer
 
 class Fight():
     player_Unit = None
@@ -9,11 +10,11 @@ class Fight():
     player_team = None
     enemy_team = None
 
-    def __init__(self, player_Unit, enemy_Unit, fight_counter, player_team, enemy_team):
+    def __init__(self, player_Unit, enemy_Unit, fight_counter):
         self.player_Unit = player_Unit
         self.enemy_Unit = enemy_Unit
-        self.player_team = player_team
-        self.enemy_team = enemy_team
+        # self.player_team = player_team
+        # self.enemy_team = enemy_team
         self.display_start_board(fight_counter)
 
     def display_start_board(self, fight_counter):
@@ -317,7 +318,7 @@ class Fight():
 
 
 
-# player_unit = Unit_Barbarian()
-# enemy_unit = Unit_Archer()
-#
-# fight = Fight(player_unit, enemy_unit, 1)
+player_unit = Unit_Barbarian()
+enemy_unit = Unit_Archer()
+
+fight = Fight(player_unit, enemy_unit, 1)

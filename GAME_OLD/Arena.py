@@ -21,7 +21,7 @@ class Arena():
 
 
     def create_enemy_team(self):
-        self.enemy_team = Team.Team(team= [], name= "")
+        self.enemy_team = Team.Team(team= [], name="")
         self.enemy_team.create_random_team()
         self.display_arena_board()
 

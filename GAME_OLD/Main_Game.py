@@ -39,12 +39,14 @@ Let's play the Game!
         self.main_game()
 
     def main_game(self):
-        self.alive_player_team = Team.Team(team= [], name= f"{self.player_Name}'s squad")
+        self.alive_player_team = Team.Team(team= [], name=f"{self.player_Name}'s squad")
         self.dead_player_team = Team.Team(team=[], name=f"{self.player_Name}'s dead units")
         self.alive_player_team.team.append(Warior_Classes.Unit_Barbarian(**{"helmet_name": "Iron Helmet", "helmet_value": 300, "boots_name": "Iron boots", "boots_value": 300, "shield_name": "Leather shield", "shield_value": 100, "bodyarmor_name": "Wooden bodyarmor", "bodyarmor_value": 100, "weapon_name": "Wooden cudgel", "weapon_value": 300, "ability_item_name": "Fitness Training 2 lvl", "ability_item_value": 0.2, "abilyty_recharger_moves": 1}))
-        self.alive_player_team.team.append(Warior_Classes.Unit_Archer(**{"helmet_name": "Iron Helmet", "helmet_value": 300, "boots_name": "Iron boots", "boots_value": 300, "shield_name": "Wooden shield", "shield_value": 200, "bodyarmor_name": "Golden bodyarmor", "bodyarmor_value": 400, "weapon_name": "Bow 3 lvl", "weapon_value": 600, "ability_item_name": "Bow Dash 3 lvl", "ability_item_value": 0.6, "abilyty_recharger_moves": 0}))
+        self.alive_player_team.team.append(
+            Warior_Classes.Unit_Archer(**{"helmet_name": "Iron Helmet", "helmet_value": 300, "boots_name": "Iron boots", "boots_value": 300, "shield_name": "Wooden shield", "shield_value": 200, "bodyarmor_name": "Golden bodyarmor", "bodyarmor_value": 400, "weapon_name": "Bow 3 lvl", "weapon_value": 600, "ability_item_name": "Bow Dash 3 lvl", "ability_item_value": 0.6, "abilyty_recharger_moves": 0}))
         self.alive_player_team.team.append(Warior_Classes.Unit_Knight(**{"helmet_name": "Golden helmet", "helmet_value": 400, "boots_name": "Iron boots", "boots_value": 300, "shield_name": "Platinum shield", "shield_value": 500, "bodyarmor_name": "Golden bodyarmor", "bodyarmor_value": 400, "weapon_name": "Steel sword", "weapon_value": 600, "ability_item_name": "Karate Training 1 lvl", "ability_item_value": 2, "abilyty_recharger_moves": 2}))
-        self.alive_player_team.team.append(Warior_Classes.Unit_Magician(**{"helmet_name": "Golden helmet", "helmet_value": 400, "boots_name": "Iron boots", "boots_value": 300, "shield_name": "Platinum shield", "shield_value": 500, "bodyarmor_name": "Golden bodyarmor", "bodyarmor_value": 400, "weapon_name": "Magic Stick 4 lvl", "weapon_value": 500, "ability_item_name": "Poison Book 2 lvl", "ability_item_value": 0.2, "abilyty_recharger_moves": 3}))
+        self.alive_player_team.team.append(
+            Warior_Classes.Unit_Magician(**{"helmet_name": "Golden helmet", "helmet_value": 400, "boots_name": "Iron boots", "boots_value": 300, "shield_name": "Platinum shield", "shield_value": 500, "bodyarmor_name": "Golden bodyarmor", "bodyarmor_value": 400, "weapon_name": "Magic Stick 4 lvl", "weapon_value": 500, "ability_item_name": "Poison Book 2 lvl", "ability_item_value": 0.2, "abilyty_recharger_moves": 3}))
 
         print(f'''
 Wow! You have a squad from 4 heroes!
