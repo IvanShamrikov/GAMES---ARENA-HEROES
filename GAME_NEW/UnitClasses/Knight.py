@@ -8,4 +8,4 @@ class Knight(Unit):
         self.health_default = init_health_default
         self.attack_default = init_attack_default
         self.ability = Abilities("SplashAttack", 50, 4, "Knight can splash all enemy units at % power")
-        
+

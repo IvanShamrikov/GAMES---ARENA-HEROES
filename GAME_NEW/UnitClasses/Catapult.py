@@ -9,3 +9,4 @@ class Catapult(Unit):
         self.attack_default = init_attack_default
         
         self.ability = Abilities("SuperAttack", 2, 4, "Catapult hits x damage to the chosen enemy unit. ")
+

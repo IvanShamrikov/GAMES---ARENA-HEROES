@@ -83,13 +83,13 @@ def create_shop():
     cursor.execute("INSERT INTO weapons VALUES ('wp11', 'it3', 'iron morgenstern', 'u4', 200, 1200)")
     cursor.execute("INSERT INTO weapons VALUES ('wp12', 'it3', 'gold morgenstern', 'u4', 300, 1600)")
 
-    cursor.execute("INSERT INTO weapons VALUES ('wp10', 'it3', 'wooden baculus', 'u5', 100, 800)")
-    cursor.execute("INSERT INTO weapons VALUES ('wp11', 'it3', 'iron baculus', 'u5', 200, 1200)")
-    cursor.execute("INSERT INTO weapons VALUES ('wp12', 'it3', 'gold baculus', 'u5', 300, 1600)")
+    cursor.execute("INSERT INTO weapons VALUES ('wp13', 'it3', 'wooden baculus', 'u5', 100, 800)")
+    cursor.execute("INSERT INTO weapons VALUES ('wp14', 'it3', 'iron baculus', 'u5', 200, 1200)")
+    cursor.execute("INSERT INTO weapons VALUES ('wp15', 'it3', 'gold baculus', 'u5', 300, 1600)")
 
-    cursor.execute("INSERT INTO weapons VALUES ('wp13', 'it3', 'wooden arrow', 'u6', 100, 800)")
-    cursor.execute("INSERT INTO weapons VALUES ('wp14', 'it3', 'iron arrow', 'u6', 200, 1200)")
-    cursor.execute("INSERT INTO weapons VALUES ('wp15', 'it3', 'explosive arrow', 'u6', 300, 1600)")
+    cursor.execute("INSERT INTO weapons VALUES ('wp16', 'it3', 'wooden arrow', 'u6', 100, 800)")
+    cursor.execute("INSERT INTO weapons VALUES ('wp17', 'it3', 'iron arrow', 'u6', 200, 1200)")
+    cursor.execute("INSERT INTO weapons VALUES ('wp18', 'it3', 'explosive arrow', 'u6', 300, 1600)")
 
     # ----------------- Create abilities ------------------
 

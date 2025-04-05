@@ -1,7 +1,7 @@
 import Arena
 import Team
 import UnitClasses
-import colorama
+# import colorama
 import time
 import Shop
 # colorama.init(autoreset=True)
@@ -32,7 +32,7 @@ class Game():
         self.player_name = input("Type your name, young Hero! ---> ")
         time.sleep(1)
         print(f'''
-Welcome, my young hero {self.player_Name}!
+Welcome, my young hero {self.player_name}!
 Here is some money ({self.player_gold}gold), you need to make your own 
 squad and fight in {self.all_arenas} arenas.
 Let's play the Game!         
@@ -105,4 +105,6 @@ squad (5 units). ''')
         elif self.game_result == False:
             self.final_looser_board()
 
-    
+
+game = Game()
+game.start_game()

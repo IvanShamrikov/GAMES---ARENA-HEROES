@@ -8,4 +8,4 @@ class Healer(Unit):
         self.health_default = init_health_default
         self.attack_default = init_attack_default
         self.ability = Abilities("SuperHeal", 20, 3, "Every third move Healer can heal all teammates by 20% from they maxHP")
-        
+

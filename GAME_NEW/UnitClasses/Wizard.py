@@ -8,3 +8,4 @@ class Wizard(Unit):
         self.health_default = init_health_default
         self.attack_default = init_attack_default
         self.ability = Abilities("SuperStune", 1, 4, "Wizard can stun all enemy units for next fight")
+

@@ -8,3 +8,4 @@ class Defender(Unit):
         self.health_default = init_health_default
         self.attack_default = init_attack_default
         self.ability = Abilities("Shield", 1, 4, "Defender create shield for all teammates for the next hit and reflect some damage.")
+

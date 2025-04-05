@@ -89,8 +89,10 @@ class Shop():
         
             if answer == "0":
                 self.item_types()
+                break
             if answer == "1":
                 self.team.team_info()
+                answer = ""
                 continue
             if answer == "2":
                 if units_to_buy > 0 and self.gold > min_gold_to_have :

@@ -79,6 +79,7 @@ class Arena():
                 #хід гравця
                 print()
                 print("Player - choose your fighter!")
+
                 self.player_team.team_info(True)
                 player_unit = self.player_team.choose_unit_by_player()
 
@@ -94,6 +95,7 @@ class Arena():
 
                 print("Хід компа")
                 
+
             fight = Fight.Fight(player_unit, comp_unit, fight_counter)
             fight.fight_start()
 
